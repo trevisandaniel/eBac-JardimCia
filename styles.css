@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&display=swap');
+/*
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body h1,
+body h2{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/*Header*/
+
+header{
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgb(4, 104, 49);
+}
+.header__container{
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    height: 100px;
+}
+.header__container h1{
+    cursor: pointer;
+    color: rgb(4, 104, 49);
+}
+.header__nav li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.header__nav li a{
+    text-decoration: none;
+    color: #0e0d0d;
+    font-weight: bold;
+    
+}
+.header__nav li a:hover{
+    color: rgb(4, 104, 49);
+}
+
+/*About
+Baseado no CSS Hero do W3 Schools
+*/
+.about__containter{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/garden1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about__hero{
+    color: #fff;
+    text-align: start;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.about__hero h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* Estilo original
+
+.about__containter{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+}
+.about__containter img{
+    height: 400px;
+}
+.about__hero{
+    width: 50%;
+    padding: 20px;
+}
+.about__hero h2{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(4, 104, 49);
+}
+.about__hero p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+*/
+
+
+/*Services*/
+.services__container{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+.services__hero{
+    height: 100%;
+    padding: 20px;
+}
+.services__hero h2{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(4, 104, 49);
+}
+.services__hero-options{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+}
+.services__hero-options-a,
+.services__hero-options-b,
+.services__hero-options-c{
+    padding: 15px 0px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+}
+.services__hero-options-a img,
+.services__hero-options-b img,
+.services__hero-options-c img{
+    height: 300px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.services__hero-options-a img:hover,
+.services__hero-options-b img:hover,
+.services__hero-options-c img:hover{
+    height: 310px;
+    transition: 0.3s;
+}
+
+.services__hero-options-a button,
+.services__hero-options-b button,
+.services__hero-options-c button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-color: rgb(4, 104, 49);
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+.services__hero-options-a button:hover,
+.services__hero-options-b button:hover,
+.services__hero-options-c button:hover{
+    background-color: rgb(6, 156, 74);
+}
+
+/*Contact*/
+
+.contact__container{
+    height: 500px;
+}
+.contact__container-form{
+    height: 80%;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contact__container-form input,
+.contact__container-form textarea,
+.contact__container-form button{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+.contact__container-form textarea{
+    resize: none;
+    height: 150px;
+}
+.contact__container-form h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(4, 104, 49);
+}
+.contact__container-form button{
+    border: none;
+    background-color: rgb(4, 104, 49);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.contact__container-form button:hover{
+    background-color: rgb(6, 156, 74);
+}
+
+/*footer*/
+
+footer{
+    background-color: #fff;
+    padding: 16px 0;
+    text-align: center;
+}
